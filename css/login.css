@@ -1,0 +1,222 @@
+/*登录页面*/
+.login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #048CEE;
+}
+.login-box-img{
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background: #fff;
+}
+.login-box{
+    width: 400px;
+    height: 380px;
+    float: left;
+    padding-left: 43px;
+    padding-right: 47px;
+
+}
+.login-tit-box{
+    height: 62px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 62px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+.login-input-box{
+    width: 320px;
+}
+.userName-input{
+    box-sizing: border-box;
+    width:320px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #2B2B2B;
+    border-bottom: 1px solid #D2D2D2;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.password-input{
+    box-sizing: border-box;
+    width:320px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #2B2B2B;
+    border-bottom: 1px solid #D2D2D2;
+    padding-left: 10px;
+}
+
+.forget-password-box{
+    height: 40px;
+    width: 100%;
+}
+.remember-box{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+.no-closeEm{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../image/common/no_close.png);
+    cursor: pointer;
+    margin-top: 13px;
+    float: left;
+    margin-left: 10px;
+}
+.closeEm{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../image/common/yes_close.png);
+    cursor: pointer; 
+}
+.remember-box>span{
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    font-size: 12px;
+    color: #898989;
+    margin-left: 10px;
+    line-height: 40px;
+    float: left;
+}
+.forget-box{
+    width: 50%;
+    height: 40px;
+    float: right;
+}
+.forget-box>span{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #048CEE;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.login-btn-box{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background: #048CEE;
+    margin:auto;
+    margin-top:15px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.no-login-btn,.login-btn-box:hover{
+    background: #048CEE;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+}
+
+/*找回密码 获取手机验证码*/
+.find-password-box{
+    position: absolute;
+    width: 520px;
+    height: 420px;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background: #fff;
+    padding-left: 80px;
+    padding-right:80px;
+}
+.find-password-tit{
+    width: 360px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    color: #898989;
+    margin-top: 70px;
+    margin-bottom: 60px;
+
+}
+.phone-input{
+    width: 360px;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px solid #D2D2D2;
+    font-size: 14px;
+    color: #2B2B2B;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.verification-code-box{
+    width: 360px;
+    height: 40px;
+    border-bottom: 1px solid #D2D2D2;
+    margin-bottom: 30px;
+}
+.verification-code-input{
+    height: 38px;
+    line-height: 38px;
+    width: 260px;
+    border: none;
+    font-size: 14px;
+    color: #2B2B2B;
+    padding-left: 10px;
+    float: left;
+}
+.get-verification-code{
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #048CEE;
+    float: right;
+    cursor: pointer;
+    margin-right:10px;
+}
+.cancel-next-box{
+    height: 40px;
+    text-align: center;
+}
+.cancel-box{
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #898989;
+    border:1px solid #D2D2D2;
+    background: #D2D2D2;
+    border-radius: 20px;
+    margin-left: 17px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.next-box{
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background: #048CEE;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.no-next-box,.next-box:hover{
+    background: #048CEE;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}

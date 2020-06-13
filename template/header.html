@@ -1,0 +1,26 @@
+<!-- 头部 -->
+<div class="header_boxs" id="header_boxs" ng-controller="headerCtrl">
+    <div class="Boxs_div">
+        <!-- logo部分 -->
+        <div class="logo_box">
+          angularJS应用
+        </div>
+        <!-- 退出登录 -->
+        <div class="userName_box">
+          <div class="look_set_box" ng-mouseover="headerShow=true" ng-mouseleave="headerShow=false">
+            <span class="user_name_span" >{{'老徐'}}</span>
+            <img class="head_box_img" src="../image/common/head-ic.png" alt="" />
+            <div class="exit_box"  ng-show="headerShow">
+              <div class="revamp_box">
+                <img src="../image/common/revamp-ic.png" alt="" />
+                <span>修改密码</span>
+              </div>
+              <div class="revamp_box">
+                <img src="../image/common/tuichu.png" alt="" />
+                <span ui-sref="login" ng-click="">退出登录</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

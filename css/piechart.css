@@ -1,0 +1,117 @@
+.managementEntry{
+    width: 100%;
+    min-height:620px;
+    background: #EDF1FD;
+    margin-top: 80px;
+}
+.content-left-box{
+    width: 220px;
+    height: auto;
+    float: left;
+}
+.content-right-box{
+    width: calc(100%-220px);
+    padding:15px;
+    margin-left: 220px;
+    position: relative;
+    bottom: 10px;
+}
+.subnav{
+    float: left;
+    width: 220px;
+    /*min-height: 670px;*/
+    height: 100%;
+    border-right:1px solid #eee;
+    background: #202438;
+    position: fixed;
+    left: 0px;
+    top:80px;
+    z-index: 99px;
+}
+.li_div{
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 15px;
+    padding-top: 17px;
+    border-bottom:1px solid #565C7B;
+    cursor: pointer;
+    
+}
+.li_div:hover{
+    background: #048CEE;
+}
+.li_div>img{
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+.li_div>span{
+    width:160px;
+    float: left;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #fff;
+    background: url(../image/common/left_xiala1.png) no-repeat;
+    background-position: right 15px;
+    
+}
+.nav_list_box1{
+    width: 500px;
+    height: 340px;
+    background: #fff;
+    border:1px solid #D2D2D2;
+    z-index: 1000;
+    position: absolute;
+    left: 276px;
+    top:0px;
+    padding: 20px 45px;
+    box-sizing: border-box;
+}
+.nav_list_box2{
+    width: 500px;
+    height: 340px;
+    background: #fff;
+    border:1px solid #D2D2D2;
+    z-index: 1000;
+    position: absolute;
+    left: 276px;
+    top:0px;
+    padding: 20px 45px;
+    box-sizing: border-box;
+}
+.nav_tit_box{
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+.nav_tit_name{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #2B2B2B;
+}
+.nav_child_box{
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #535353;
+    cursor: pointer;
+    float: left;
+    margin-right: 40px;
+}
+.nav_child_box:hover{
+    color:#048CEE;
+    font-size: 14px;
+}
+/*左侧导航栏end*/
+.content-right{
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border:1px solid #D2D2D2;
+}

@@ -1,0 +1,66 @@
+<div ng-include="'./header.html'"></div>
+<!-- 管理入口 -->
+<div class="managementEntry">
+    <!-- 左侧导航栏 -->
+    <div class="content-left-box">
+        <div class="subnav">
+            <div class="li_div" ng-mouseover="navShow=true" ng-mouseleave="navShow=false">
+                <img src="../image/common/approval1.png" alt="" /><span>Table</span>
+            </div>
+            <div class="li_div" ng-mouseover="nav1Show=true" ng-mouseleave="nav1Show=false">
+                <img src="../image/common/finance1.png" alt="" /><span>Form</span>
+            </div>
+            <div class="li_div" ng-mouseover="nav2Show=true" ng-mouseleave="nav2Show=false">
+                <img src="../image/common/system-ic2.png" alt="" /><span>Other</span>
+            </div>
+            <!-- 子集 -->
+            <!-- <div class="nav_list_box1" ng-mouseover="nav1Show=true" ng-mouseleave="nav1Show=false" ng-show="nav1Show">
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">日常业务</div>
+                    <div class="nav_child_box ">出款明细表</div>
+                    <div class="nav_child_box ">收款明细表</div>
+                    <div class="nav_child_box ">银行日记账</div>
+                </div>
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">报表</div>
+                    <div class="nav_child_box ">资金日报</div>
+                    <div class="nav_child_box ">资金月报</div>
+                    <div class="nav_child_box ">支出月报</div>
+                    <div class="nav_child_box ">收款月报</div>
+                    <div class="nav_child_box ">资金预算表</div>
+                </div>
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">工资</div>
+                    <div class="nav_child_box ">员工工资</div>
+                    <div class="nav_child_box ">员工社保</div>
+                    <div class="nav_child_box ">员工公积金</div>
+                </div>
+            </div>
+            <div class="nav_list_box2" ng-mouseover="nav2Show=true" ng-mouseleave="nav2Show=false" ng-show="nav2Show">
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">基本设置</div>
+                    <div class="nav_child_box ">组织架构</div>
+                </div>
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">财务设置</div>
+                    <div class="nav_child_box ">账套设置</div>
+                    <div class="nav_child_box ">科目期初值设置</div>
+                    <div class="nav_child_box ">银行期初值设置</div>
+                    <div class="nav_child_box ">期初对账</div>
+                </div>
+                <div class="nav_tit_box clearfix">
+                    <div class="nav_tit_name">行政设置</div>
+                    <div class="nav_child_box ">审批设置</div>
+                    <div class="nav_child_box " ui-sref="piechart.permission_set">权限设置</div>
+                    <div class="nav_child_box " ui-sref="piechart.other_set">其他设置</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="content-right-box">
+        <div class="content-right">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
