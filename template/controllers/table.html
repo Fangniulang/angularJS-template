@@ -1,21 +1,7 @@
 <div class="table-box" ng-controller="tableCtrl">
 	<div class="">this is table page</div>
 	<div class="">
-		<table id="realTime_Table" class="table table-bordered">
-		    <thead>
-		        <tr >
-		            <th>日期</th>
-		            <th>新增用户</th>
-		            <th>活跃用户</th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		    	<tr ng-repeat='info in list'>
-					<td ng-bind="info.time"></td>
-					<td ng-bind="info.user"></td>
-					<td ng-bind="info.userName"></td>
-		    	</tr>
-		    </tbody>
+		<table id="realTime_Table" data-click-to-select="true" class="table table-bordered" data-page-size="20">
 		</table>
 	</div>
 </div>
