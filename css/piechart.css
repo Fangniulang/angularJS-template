@@ -1,8 +1,7 @@
 .managementEntry{
     width: 100%;
-    min-height:620px;
+    height:100%;
     background: #EDF1FD;
-    margin-top: 80px;
 }
 .content-left-box{
     width: 220px;
@@ -10,22 +9,23 @@
     float: left;
 }
 .content-right-box{
-    width: calc(100%-220px);
+    width: calc(100% - 220px);
+    height: 100%;
     padding:15px;
+    box-sizing: border-box;
+    padding-top: 95px;
     margin-left: 220px;
-    position: relative;
-    bottom: 10px;
 }
 .subnav{
     float: left;
     width: 220px;
-    /*min-height: 670px;*/
     height: 100%;
     border-right:1px solid #eee;
     background: #202438;
     position: fixed;
     left: 0px;
     top:80px;
+    bottom: 0;
     z-index: 99px;
 }
 .li_div{
@@ -109,7 +109,6 @@
 /*左侧导航栏end*/
 .content-right{
     width: 100%;
-    min-height: 600px;
     height: 100%;
     background: #fff;
     box-sizing: border-box;

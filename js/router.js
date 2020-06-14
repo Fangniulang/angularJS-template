@@ -25,14 +25,14 @@ statisticalApp.config(["$stateProvider","$urlRouterProvider",function ($statePro
                 }]
             }
         })
-        .state("piechart.main", { //主页
-            url: "/main",
-            templateUrl: "./main.html",
+        .state("piechart.table", { //主页
+            url: "/table",
+            templateUrl: "./controllers/table.html",
             resolve: {
                 load: ['$ocLazyLoad', function ($ocLazyLoad) {
                     return $ocLazyLoad.load([
-                        '../css/main.css',
-                        '../js/main.js'
+                        '../css/table.css',
+                        '../js/controllers/table.js'
                     ])
                 }]
             }
