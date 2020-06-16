@@ -5,4 +5,8 @@ managementlCtrl.controller('managementlCtrl',function($scope,$http,$cookies,$loc
         obj.hide();
         obj.parent().find('i').removeClass('active_i');
     };
+    $scope.routerList = [
+    	{name: 'piechart.table'}
+    ];
+    
 });

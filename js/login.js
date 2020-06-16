@@ -1,3 +1,4 @@
+'use strict'
 var managementlCtrl=angular.module("managementlCtrl",[]);
 managementlCtrl.controller('loginCtrl',function($scope,$http,$interval,$cookies,$location,$window,$state,$stateParams,$rootScope){
     $scope.text={
@@ -88,5 +89,11 @@ managementlCtrl.controller('loginCtrl',function($scope,$http,$interval,$cookies,
     $scope.loginBtnShow=true;
     $scope.findPasswordBtnShoe=false;
     $scope.resetPasswordShow=false;
+
+
+    $scope.loginFunc = function() {
+        var times=1000*60*60*6; //6小时缓存
+        $cookies.put("developerToken",JSON.stringify(data.data),{expires:new Date(new Date().getTime()+times)});
+    }
 
 });

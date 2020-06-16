@@ -1,5 +1,5 @@
 var statisticalApp=angular.module('statisticalApp',
-    ['ngCookies','ui.router','oc.lazyLoad','controlService','controlDirective','controlFilter','headerCtrl','managementlCtrl']);//管理系统
+    ['ngCookies','ui.router','oc.lazyLoad','Routing','controlService','controlDirective','controlFilter','headerCtrl','managementlCtrl']);//管理系统
 
 statisticalApp.run(['$rootScope','$http','$cookies','$state',function($rootScope,$http,$cookies,$state){
         // $rootScope.Url='http://192.168.0.16:8061/';

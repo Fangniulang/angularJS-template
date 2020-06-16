@@ -1,4 +1,4 @@
-statisticalApp.config(["$stateProvider","$urlRouterProvider",function ($stateProvider, $urlRouterProvider) {
+statisticalApp.config(["$stateProvider","$urlRouterProvider",'routerProvider',function ($stateProvider, $urlRouterProvider,routerProvider) {
     // $urlRouterProvider.otherwise("/piechart/chart");
     $urlRouterProvider.when("", "/login");
     $stateProvider
@@ -75,13 +75,8 @@ statisticalApp.config(["$stateProvider","$urlRouterProvider",function ($statePro
             }
         })
 
-
-
-
-
-
-
-
+    routerProvider.setCollectionUrl('../js/routeCollection.json');
+    console.log($stateProvider)
 
 
 
