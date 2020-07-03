@@ -1,6 +1,6 @@
 'use strict'
 var managementlCtrl=angular.module("managementlCtrl",[]);
-managementlCtrl.controller('loginCtrl',function($scope,$http,$interval,$cookies,$location,$window,$state,$stateParams,$rootScope){
+managementlCtrl.controller('loginCtrl',function($scope,$http,$interval,$cookies,$location,$window,$state,$stateParams,$rootScope,router){
     $scope.text={
         name: '11111111',
         password:'123456'
@@ -89,11 +89,15 @@ managementlCtrl.controller('loginCtrl',function($scope,$http,$interval,$cookies,
     $scope.loginBtnShow=true;
     $scope.findPasswordBtnShoe=false;
     $scope.resetPasswordShow=false;
-
+    $scope.reload = function() {
+        router.setUpRoutes();
+    };
 
     $scope.loginFunc = function() {
-        var times=1000*60*60*6; //6小时缓存
-        $cookies.put("developerToken",JSON.stringify(data.data),{expires:new Date(new Date().getTime()+times)});
+        console.log(0)
+        $state.go('piechart.table')
+        //var times=1000*60*60*6; //6小时缓存
+        //$cookies.put("developerToken",JSON.stringify(data.data),{expires:new Date(new Date().getTime()+times)});
     }
 
 });

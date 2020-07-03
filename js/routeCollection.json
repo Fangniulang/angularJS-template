@@ -1,16 +1,16 @@
 {
-    "xxx": {
-        "url": "/xxx",
-        "templateUrl": "templates/xxx.html"
+    
+    "piechart.table": {
+        "url": "/table",
+        "templateUrl": "./controllers/table.html",
+        "css": "../css/table.css",
+        "js": "../js/controllers/table.js"
     },
 
-    "yyy": {
-        "url": "/yyy",
-        "templateUrl": "templates/yyy.html"
-    },
-
-    "zzz": {
-        "url": "/zzz",
-        "templateUrl": "templates/zzz.html"
+    "piechart.form": {
+        "url": "/form",
+        "templateUrl": "./controllers/form.html",
+        "css": "../css/form.css",
+        "js": "../js/controllers/form.js"
     }
 }
