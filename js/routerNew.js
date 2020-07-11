@@ -21,7 +21,6 @@ statisticalApp.config(["$stateProvider","$urlRouterProvider",'routerProvider',fu
             templateUrl: "./piechart.html",
             resolve: {
                 load: ['$ocLazyLoad', function ($ocLazyLoad) {
-                    console.log(12)
                     return $ocLazyLoad.load('../css/piechart.css')
                 }]
             }
@@ -77,7 +76,7 @@ statisticalApp.config(["$stateProvider","$urlRouterProvider",'routerProvider',fu
         // })
 
     
-    routerProvider.setCollectionUrl('../js/routeCollection.json');
+
 
 
 }]);
